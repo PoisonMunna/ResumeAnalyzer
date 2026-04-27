@@ -1,0 +1,121 @@
+.file-upload-container {
+  border: 2px dashed #b9d0e8;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: #f8fafc;
+  position: relative;
+  overflow: hidden;
+}
+
+.file-upload-container:hover {
+  border-color: var(--primary-color);
+  background: #f0f6fc;
+}
+
+.file-upload-container.dragging {
+  border-color: var(--secondary-color);
+  background: #eef7ff;
+  transform: scale(1.02);
+}
+
+.file-upload-container.has-file {
+  border: 2px solid var(--success-color);
+  background: rgba(31, 138, 92, 0.04);
+  cursor: default;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.upload-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(30, 90, 122, 0.08);
+  transition: all 0.3s ease;
+}
+
+.file-upload-container:hover .icon-circle {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--primary-glow);
+}
+
+.upload-prompt h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.upload-prompt p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.file-icon-wrapper {
+  background: rgba(31, 138, 92, 0.12);
+  color: var(--success-color);
+  padding: 0.75rem;
+  border-radius: 12px;
+}
+
+.file-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.file-name {
+  font-weight: 500;
+  color: var(--text-primary);
+  word-break: break-all;
+  text-align: left;
+}
+
+.file-size {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.clear-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear-btn:hover {
+  background: rgba(185, 28, 28, 0.1);
+  color: var(--danger-color);
+}
