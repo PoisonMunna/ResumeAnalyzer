@@ -1,5 +1,5 @@
 # 🌟 ResumeAI - ATS Resume Analyzer
-
+ 
 Welcome to **ResumeAI**, an intelligent, AI-powered resume analyzer designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). By leveraging the advanced capabilities of Google's **Gemini AI**, this application evaluates your resume against industry-standard ATS criteria and tailored job descriptions, providing you with a compatibility score and actionable feedback.
 
 ---
